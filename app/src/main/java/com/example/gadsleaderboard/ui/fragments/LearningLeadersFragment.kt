@@ -6,6 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
+import com.example.gadsleaderboard.data.api.ApiHelper
+import com.example.gadsleaderboard.data.api.RetrofitBuilder
 import com.example.gadsleaderboard.databinding.FragmentLearningLeadersBinding
 
 class LearningLeadersFragment : Fragment() {
@@ -15,7 +18,10 @@ class LearningLeadersFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        leadersViewModel = ViewModelProvider(this).get(LearningLeadersViewModel::class.java)
+        leadersViewModel = ViewModelProvider(
+            this,
+            LearningViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
+        ).get(LearningLeadersViewModel::class.java)
     }
 
     override fun onCreateView(
