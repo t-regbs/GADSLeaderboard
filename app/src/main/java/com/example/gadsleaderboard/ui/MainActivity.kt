@@ -1,8 +1,11 @@
-package com.example.gadsleaderboard
+package com.example.gadsleaderboard.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gadsleaderboard.R
+import com.example.gadsleaderboard.ViewPagerFragmentAdapter
 import com.example.gadsleaderboard.databinding.ActivityMainBinding
+import com.example.gadsleaderboard.titles
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 

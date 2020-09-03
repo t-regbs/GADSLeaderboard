@@ -1,10 +1,12 @@
-package com.example.gadsleaderboard
+package com.example.gadsleaderboard.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.gadsleaderboard.R
+
 class IqLeadersFragment : Fragment() {
 
     override fun onCreateView(
