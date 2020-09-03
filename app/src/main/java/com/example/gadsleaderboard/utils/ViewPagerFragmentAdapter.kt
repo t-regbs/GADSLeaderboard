@@ -1,10 +1,10 @@
-package com.example.gadsleaderboard
+package com.example.gadsleaderboard.utils
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.gadsleaderboard.ui.fragments.IqLeadersFragment
-import com.example.gadsleaderboard.ui.fragments.LearningLeadersFragment
+import com.example.gadsleaderboard.ui.skilliqleaders.IqLeadersFragment
+import com.example.gadsleaderboard.ui.learningleaders.LearningLeadersFragment
 
 val titles = arrayOf("Learning Leaders", "Skill IQ Leaders")
 class ViewPagerFragmentAdapter(fragmentActivity: FragmentActivity) :

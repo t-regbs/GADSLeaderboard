@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.IqLeadersFragment">
+    tools:context=".ui.skilliqleaders.IqLeadersFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/iq_leaders_rv"

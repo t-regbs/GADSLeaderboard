@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="name_size">16sp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="xlarge_margin">32dp</dimen>
+    <dimen name="xxlarge_margin">40dp</dimen>
+    <dimen name="xxxlarge_margin">48dp</dimen>
 </resources>

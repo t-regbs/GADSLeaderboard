@@ -1,4 +1,4 @@
-package com.example.gadsleaderboard
+package com.example.gadsleaderboard.ui.learningleaders
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.gadsleaderboard.databinding.LearningLeadersItemBinding
 import com.example.gadsleaderboard.models.LearningLeader
 
-class LearningLeaderAdapter : ListAdapter<LearningLeader, LearningLeaderAdapter.ViewHolder>(COMPARATOR){
+class LearningLeaderAdapter : ListAdapter<LearningLeader, LearningLeaderAdapter.ViewHolder>(
+    COMPARATOR
+){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder.fromParent(parent)
@@ -25,7 +27,7 @@ class LearningLeaderAdapter : ListAdapter<LearningLeader, LearningLeaderAdapter.
     class ViewHolder private constructor(val learningLeadersItemBinding: LearningLeadersItemBinding):
         RecyclerView.ViewHolder(learningLeadersItemBinding.root) {
         companion object{
-            fun fromParent(parent: ViewGroup): ViewHolder{
+            fun fromParent(parent: ViewGroup): ViewHolder {
                 val layoutInflater = LayoutInflater.from(parent.context)
                 val binding = LearningLeadersItemBinding.inflate(layoutInflater,parent,false)
                 return ViewHolder(binding)

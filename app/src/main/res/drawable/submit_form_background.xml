@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque"> <!-- android:opacity="opaque" should be here -->
+    <item
+        android:bottom="0dp"
+        android:drawable="@color/colorPrimary"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+    <item
+        android:bottom="600dp"
+        android:drawable="@drawable/capsule"
+        android:left="-100dp"
+        android:right="300dp"
+        android:top="-450dp" />
+</layer-list>

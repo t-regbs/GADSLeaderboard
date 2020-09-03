@@ -1,4 +1,4 @@
-package com.example.gadsleaderboard.ui.fragments
+package com.example.gadsleaderboard.ui.skilliqleaders
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData

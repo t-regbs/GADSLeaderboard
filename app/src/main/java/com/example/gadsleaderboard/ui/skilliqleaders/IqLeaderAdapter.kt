@@ -1,4 +1,4 @@
-package com.example.gadsleaderboard
+package com.example.gadsleaderboard.ui.skilliqleaders
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -25,7 +25,7 @@ class IqLeaderAdapter : ListAdapter<IqLeader, IqLeaderAdapter.ViewHolder>(COMPAR
     class ViewHolder private constructor(val iqLeadersItemBinding: IqLeadersItemBinding):
         RecyclerView.ViewHolder(iqLeadersItemBinding.root) {
         companion object{
-            fun fromParent(parent: ViewGroup): ViewHolder{
+            fun fromParent(parent: ViewGroup): ViewHolder {
                 val layoutInflater = LayoutInflater.from(parent.context)
                 val binding = IqLeadersItemBinding.inflate(layoutInflater,parent,false)
                 return ViewHolder(binding)

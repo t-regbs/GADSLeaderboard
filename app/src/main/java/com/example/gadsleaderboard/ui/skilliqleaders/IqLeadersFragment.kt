@@ -1,4 +1,4 @@
-package com.example.gadsleaderboard.ui.fragments
+package com.example.gadsleaderboard.ui.skilliqleaders
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import com.example.gadsleaderboard.IqLeaderAdapter
 import com.example.gadsleaderboard.data.api.ApiHelper
 import com.example.gadsleaderboard.data.api.RetrofitBuilder
 import com.example.gadsleaderboard.databinding.FragmentIqLeadersBinding
