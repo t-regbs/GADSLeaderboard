@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="skillIQLeader"
+            type="com.example.gadsleaderboard.models.IqLeader" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/imgList"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="15"
+                app:srcCompat="@drawable/skill_iq_trimmed"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="85"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    tools:text="Timilehin Aregbesola"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:text="@{skillIQLeader.name}"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/name_size" />
+
+                <TextView
+                    android:id="@+id/tv_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{skillIQLeader.score + ` skill IQ Score, ` + skillIQLeader.country}"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    tools:text="300 skill IQ Score, Nigeria"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

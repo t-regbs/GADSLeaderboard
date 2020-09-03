@@ -15,8 +15,8 @@ class LearningLeaderAdapter : ListAdapter<LearningLeader, LearningLeaderAdapter.
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val course = getItem(position)
-        course?.let {
+        val learningLeader = getItem(position)
+        learningLeader?.let {
             holder.bind(it)
         }
     }

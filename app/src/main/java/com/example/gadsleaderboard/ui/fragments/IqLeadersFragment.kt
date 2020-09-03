@@ -5,16 +5,25 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.gadsleaderboard.R
+import androidx.lifecycle.ViewModelProvider
+import com.example.gadsleaderboard.databinding.FragmentIqLeadersBinding
 
 class IqLeadersFragment : Fragment() {
+
+    private lateinit var binding: FragmentIqLeadersBinding
+    private var leadersViewModel: IqLeadersViewModel? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        leadersViewModel = ViewModelProvider(this).get(IqLeadersViewModel::class.java)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_iq_leaders, container, false)
+        binding = FragmentIqLeadersBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
 }
