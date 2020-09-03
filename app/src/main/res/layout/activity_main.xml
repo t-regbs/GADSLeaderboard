@@ -56,8 +56,9 @@
         app:layout_constraintTop_toBottomOf="@id/appBarLayout"
         app:tabIndicatorColor="@color/colorAccent"
         app:tabIndicatorHeight="4dp"
+        app:tabSelectedTextColor="@color/colorAccent"
         app:tabTextAppearance="@style/MyTabTextAppearance"
-        app:tabTextColor="@color/colorAccent" />
+        app:tabTextColor="@android:color/darker_gray" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
