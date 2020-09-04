@@ -6,4 +6,6 @@
     <color name="colorTransparent">#00FFFFFF</color>
     <color name="colorGrey">#22FFFFFF</color>
     <color name="yellow_text">#ffae45</color>
+    <color name="colorGreen">#03BC03</color>
+    <color name="colorRed">#FF0000</color>
 </resources>

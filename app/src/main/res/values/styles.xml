@@ -11,10 +11,6 @@
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
 
-    <style name="SubmitTheme" parent="Theme.MaterialComponents.NoActionBar">
-        <item name="android:windowBackground">@drawable/submit_form_background</item>
-    </style>
-
     <style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="textAllCaps">false</item>
     </style>
@@ -24,13 +20,4 @@
         <item name="colorControlNormal">@color/colorAccent</item>
     </style>
 
-    <style name="submit_et">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">1</item>
-<!--        <item name="android:background">@drawable/rounded_edittext</item>-->
-        <item name="android:textSize">16sp</item>
-        <item name="android:padding">8dp</item>
-        <item name="android:layout_margin">8dp</item>
-    </style>
 </resources>
