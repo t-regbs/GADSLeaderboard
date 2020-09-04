@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.gadsleaderboard.data.api.ApiHelper
 import com.example.gadsleaderboard.data.api.RetrofitBuilder
+import com.example.gadsleaderboard.data.api.SubmitBuilder
 import com.example.gadsleaderboard.databinding.FragmentIqLeadersBinding
 import com.example.gadsleaderboard.utils.Status
 
@@ -22,7 +23,7 @@ class IqLeadersFragment : Fragment() {
         super.onCreate(savedInstanceState)
         leadersViewModel = ViewModelProvider(
             this,
-            IqViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
+            IqViewModelFactory(ApiHelper(RetrofitBuilder.apiService, SubmitBuilder.submitService))
         ).get(IqLeadersViewModel::class.java)
     }
 

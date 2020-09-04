@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.gadsleaderboard.data.api.ApiHelper
 import com.example.gadsleaderboard.data.api.RetrofitBuilder
+import com.example.gadsleaderboard.data.api.SubmitBuilder
 import com.example.gadsleaderboard.databinding.FragmentLearningLeadersBinding
 import com.example.gadsleaderboard.utils.Status
 
@@ -22,7 +23,7 @@ class LearningLeadersFragment : Fragment() {
         super.onCreate(savedInstanceState)
         leadersViewModel = ViewModelProvider(
             this,
-            LearningViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
+            LearningViewModelFactory(ApiHelper(RetrofitBuilder.apiService, SubmitBuilder.submitService))
         ).get(LearningLeadersViewModel::class.java)
     }
 
